@@ -1,0 +1,55 @@
+<html>
+<head>
+<meta http-equiv="content-Type" content="text/html"; charsheet="utf-8">
+<title>form making</title>
+<link rel="stylesheet" href="stylesheet.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+
+</head>
+<body>
+    <div class="form">
+    
+<div class="signin">
+    <form  name="myform" method="POST" onsubmit="return validate()">
+    <h2 style="color:white">Log IN</h2>
+    <input type="text" name="username" placeholder="Username"/>
+    <input type="password" name="pass" placeholder="Password"/><br><br>
+    <a href="index1.html"><input type="button" value="LOG In" /></a><br><br>
+    <div class="container">
+</div><br><br><br><br><br>
+<p class="message">DON'T HAVE A ACCOUNT?<a href="#">Sign Up Here</a></p>
+
+    
+</form>
+
+
+<form class="c2">
+    <h2 style="color:#fff;">Sign Up</h2>
+    <input type="text" name="username" placeholder='First name'/>
+    <br><br>
+    <input type="text" name="username" placeholder='Last Name'/>
+    <br><br>
+    <input type="password" name="pass" placeholder='Password'/>
+    <br><br>
+    <input type="password" name="pass" placeholder='Confirm Password'/>
+    <br><br>
+    <input type="text" name="email" placeholder='Email Address'/>
+    <br><br>
+    <a href="index1.html">
+    <input  type="button" value="sign up"/></a><br><br>
+    
+</form>
+</div>
+</div>
+
+    
+<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+<script>
+    
+$('.message a').click(function(){
+    $('form').animate({height:"toggle",opacity:"toggle"},"slow");
+});
+</script>
+
+</body>
+</html>
